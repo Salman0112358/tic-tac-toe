@@ -24,3 +24,24 @@ a {
     background: black;
   }
 }
+
+.grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.square{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.5rem;
+  
+}
+
+.square_crosses {
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(89,13,161,1) 50%, rgba(159,127,167,1) 100%);
+}
+
+.square_noughts {
+  background: linear-gradient(0deg, rgba(169,34,195,1) 0%, rgba(253,45,45,1) 100%);;
+}
