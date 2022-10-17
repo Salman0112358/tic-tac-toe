@@ -19,6 +19,10 @@ const Board = () => {
     setCurrentPlayer(currentPlayer === 'noughts' ? 'crosses' : 'noughts' )
   }
 
+  const handleReset = () => {
+    setSquares(Array(9).fill(null));
+  }
+
   return (
     <>
       <h3>{`It's your move ${currentPlayer}`}</h3>
@@ -36,6 +40,9 @@ const Board = () => {
           )
         })}
       </div>
+      <button className="reset" onClick={handleReset}>
+        RESET GAME
+      </button>
     </>
   );
 };

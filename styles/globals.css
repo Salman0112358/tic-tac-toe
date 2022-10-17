@@ -35,6 +35,7 @@ a {
   width: 7rem;
   height: 7rem;
   border-radius: 0.5rem;
+  cursor: pointer;
   
 }
 
@@ -44,4 +45,9 @@ a {
 
 .square_noughts {
   background: linear-gradient(0deg, rgba(169,34,195,1) 0%, rgba(253,45,45,1) 100%);;
+}
+
+.reset {
+  margin-top: 1rem;
+  cursor: pointer;
 }
