@@ -21,6 +21,8 @@ const Board = () => {
 
   const handleReset = () => {
     setSquares(Array(9).fill(null));
+    setWinner(null);
+    setCurrentPlayer(Math.round(Math.random() * 1) === 1 ? "noughts" : "crosses");
   }
 
   return (
