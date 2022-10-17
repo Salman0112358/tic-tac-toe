@@ -1,14 +1,10 @@
 import React from 'react'
 import {ImCross} from 'react-icons/im'
 import {BiCircle} from 'react-icons/bi'
-type Player = 'noughts' | 'crosses' | null
+import { ISquare } from '../interfaces';
 
-interface ISquare {
-    value : Player,
-    onClick : () => void,
-    winner : Player,
 
-}
+
 
 const iconSize = 50;
 
