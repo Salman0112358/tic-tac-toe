@@ -30,7 +30,7 @@ const Board = () => {
   return (
     <>
       {!winner && <h3>{`It's your move ${currentPlayer}`}</h3> }
-      {winner && winner !== "DRAW" && <h3>{`Ultimate Victory! ${currentPlayer}`}</h3> }
+      {winner && winner !== "DRAW" && <h3>{`Ultimate Victory! ${winner}`}</h3> }
       {winner==='DRAW' && <h3>This Game Has Ended In A Draw</h3> }
       <div className="grid">
         {Array(9)
