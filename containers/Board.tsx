@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Board = () => {
-  return (
-    <div>Board</div>
-  )
-}
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  const [currentPlayer, setCurrentPlayer] = useState<'noughts' | 'crosses'>((Math.round(Math.random() * 1) === 1 ? 'noughts' : 'crosses'))
 
-export default Board
+  return <div>Board</div>;
+};
+
+export default Board;
